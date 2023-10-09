@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Trivial Market</title>
-        <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+        <title>Trivial AI</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico"/>
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
         <!-- <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" /> -->
@@ -155,7 +157,7 @@
             background-color: white;  /* White background */
             color: black;  /* Black text */
             padding: 10px 20px;  /* Padding to make it look good */
-            margin-top: 10px;  /* Margin at the top for spacing */
+            margin-top: 20px;  /* Margin at the top for spacing */
             border: 2px solid rgb(20, 72, 140);  /* Border color */
             border-radius: 50px;  /* Rounded corners */
             cursor: pointer;  /* Pointer cursor on hover */
@@ -235,38 +237,50 @@
             margin-top: 3px;
         }
 
+        @media (max-width: 768px) {
+            #main {
+                margin-left: 30px !important;
+                margin-right: 30px !important;
+                text-align: left;
+            }
+        }
+
+
 
     </style>
     </head>
     <body id="page-top">
+        
+        <!-- Navbar -->
+
+
         <div class="navbar">
-            <div><a href="index.html">Trivial</a></div>
+            <div><a href="index.html">Trivial AI </a></div>
+            <i class="fa fa-bars" aria-hidden="true" style="display:none;"></i> 
             
-            <div><a href="about.html">About Us</a></div> 
-            <div><a href="https://5idbbejg3v4.typeform.com/to/DUURfkPh" target="_blank">Feedback</a></div>
+            <div><a href="about.html">About</a></div> 
+            <!-- <div><a href="https://5idbbejg3v4.typeform.com/to/DUURfkPh" target="_blank">Feedback</a></div> -->
             <div><a href="https://5idbbejg3v4.typeform.com/to/tre30rdz" target="_blank">Join Beta</a></div>
        
         </div>
         
         <!-- Main content -->
-        <div id="main" class="container-main">
-            <div class="text-center mt-4 mb-3">
-              <h1>
-                <span class="bold-text gradient-text">Simplifying Equity Research </span>
-                <!-- <span class="bold-text gradient-text" id="rotating-text"></span>
-                <span class="bold-text">is not fun.</span> -->
-              </h1>
+        <div id="main" class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 text-center mt-4 mb-3">
+                    <h1>
+                        <span class="bold-text gradient-text">Simplifying Equity Research </span>
+                    </h1>
+                </div>
+                    <p>Tired of sifting through sell-side reports? That's why we built Trivial.</p>
+                    <p>We are a dedicated team of computer scientists and financial analysts.</p>
+                    <p>We handle the tedious aspects so you can focus on what truly matters.</p>
+                    <a href="https://5idbbejg3v4.typeform.com/to/tre30rdz">
+                    <button class="btn-juice mb-4 mt-0">Join Our Beta</button>
+                    </a>
+                </div>
             </div>
-            <p>Tired of sifting through 30+ sell-side reports? That's why we built Trivial.</p>
-            <p>We are a dedicated team of computer scientists and financial analysts.</p>
-            <p>We handle the tedious aspects so you can focus on what truly matters.</p>
-            <a href="https://5idbbejg3v4.typeform.com/to/tre30rdz">
-              <button class="btn-juice mb-4 mt-0">Join Our Beta</button>
-            </a>
         </div>
-    </form>
-    
-</div>
 
     
         <script>
@@ -387,10 +401,10 @@ document.getElementById('pdfInput').addEventListener('change', function() {
   <footer class="bg-white text-center py-5">
     <div class="container px-5">
         <div class="text-black-50 small">
-            <div class="mb-2">&copy; Trivial @ 2023. All Rights Reserved.</div>
+            <!-- <div class="mb-2">&copy; Trivial @ 2023. All Rights Reserved.</div> -->
             <!-- <a href="#!">About</a> -->
             <!-- <span class="mx-1">&middot;</span>
-            <a href="#!">Terms</a>
+            <a href="#!">Terms</a>a
             <span class="mx-1">&middot;</span>
             <a href="#!">FAQ</a> -->
         </div>
